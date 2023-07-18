@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./resources/css/board.css">
 </head>
 <body>
+	<%@ include file="menu.jsp"%>
 	<h1>I am board</h1>
 	<img alt="??" src="./img/majayong.png" height="100px">
 	<br>
