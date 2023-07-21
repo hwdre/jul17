@@ -20,17 +20,17 @@ public class IndexController {
 
 	@GetMapping("/board2")
 	public String board2() {
-		return "menu";
+		return "board2";
 	}
 
 	@GetMapping("/monni")
-	public String monni() {
-		return "menu";
+	public String mooni() {
+		return "mooni";
 	}
 
 	@GetMapping("/notice")
 	public String notice() {
-		return "menu";
+		return "notice";
 	}
 
 }

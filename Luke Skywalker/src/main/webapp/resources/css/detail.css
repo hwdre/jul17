@@ -10,10 +10,10 @@
 .title{
 	width: 100%;
 	height: 50px;
-	line-height: 50px;
-	font-size: large;	
+	line-height:50px;
+	font-size: large;
 }
-.namebar{
+.name-bar{
 	width: 100%;
 	border-bottom: 1px solid black;
 	background-color: white;
@@ -21,13 +21,20 @@
 	padding: 20px;
 	box-sizing: border-box;
 }
+.name, .like, .date, .ip{
+	width: 50%;
+	height:20px;
+	float: left;
+}
 .name, .like{
-	
+	border-bottom: 1px solid black;
 }
 .like, .ip{
 	text-align: right;
+		
 }
 .content{
-	width: 100%;
-	min-height: 500px;	
+	width:100%;
+	min-height:500px; 
+	height: auto;
 }

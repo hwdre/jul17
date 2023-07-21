@@ -5,12 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Index</title>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
 <%@ include file="menu.jsp" %>
 	<h1>i am index</h1>
-	<a href="./board">보드로 가기</a>
+	<%=request.getHeader("User-Agent") %>
 	<p>안녕 난 p태그야^^</p>
-	엑셀 워드 설치해주세요...
+	<form action="/" method="post">
+		<input type="text" id="id" name="id" required="required"><br>
+		<input type="text" id="pw" name="pw" required="required"><br>
+		<input type="submit" value="Login">
+	</form>
 </body>
 </html>
