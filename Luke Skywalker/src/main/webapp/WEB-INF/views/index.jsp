@@ -12,10 +12,5 @@
 	<h1>i am index</h1>
 	<%=request.getHeader("User-Agent") %>
 	<p>안녕 난 p태그야^^</p>
-	<form action="/" method="post">
-		<input type="text" id="id" name="id" required="required"><br>
-		<input type="text" id="pw" name="pw" required="required"><br>
-		<input type="submit" value="Login">
-	</form>
 </body>
 </html>

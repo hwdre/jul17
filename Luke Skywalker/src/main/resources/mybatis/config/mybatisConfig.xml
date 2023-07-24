@@ -6,6 +6,7 @@
 	<typeAliases>
 		<typeAlias type="java.lang.Integer" alias="integer"/>
 		<typeAlias type="com.Luke.pro1.BoardDTO" alias="dto"/>
+		<typeAlias type="com.Luke.pro1.LoginDTO" alias="logindto"/>
 	</typeAliases>
 	
 	
