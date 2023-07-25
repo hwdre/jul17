@@ -25,8 +25,8 @@ public class LoginController {
 	public String login(HttpServletRequest request) {
 
 		LoginDTO dto = new LoginDTO();
-		dto.setM_id(request.getParameter("id"));
-		dto.setM_pw(request.getParameter("pw"));
+		dto.setM_id(request.getParameter("id")); //name
+		dto.setM_pw(request.getParameter("pw")); //name
 		// 생각해주세요. id/pw를 보냈을 때 무엇이 왔으면 좋을까요?
 		// 이름 + count(*)
 		LoginDTO result = loginService.login(dto);

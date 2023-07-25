@@ -16,6 +16,12 @@
 	</properties>
 	<dependencies>
 
+		<!-- 저당소 만들기 -->
+		
+		<dependency>
+			<!-- 전자정부 페이징 가져오기 -->
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
 		<dependency>
 			<groupId>javax.annotation</groupId>

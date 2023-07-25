@@ -43,5 +43,10 @@ public class BoardDAO {
 	public void edit(BoardDTO dto) {
 		sqlSession.update("board.edit",dto);
 	}
+
+	public void ilyou(BoardDTO resultdto) {
+		sqlSession.update("board.ilyou", resultdto);
+		
+	}
 	
 }

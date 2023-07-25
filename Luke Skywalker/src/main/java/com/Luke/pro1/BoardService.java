@@ -7,6 +7,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,12 +32,19 @@ public class BoardService {
 	}
 
 	public BoardDTO detail(BoardDTO resultdto) {
+		//좋아요 수 +1하기 기능을 넣어주겠습니다.
+		boardDAO.ilyou(resultdto);
 		BoardDTO dto = boardDAO.detail(resultdto);
-		if (dto.getBip() != null && dto.getBip().indexOf(".") != -1) {
-			String ip = dto.getBip();
-			String[] ipArr = ip.split("[.]");
-			ipArr[1] = "♡";
-			dto.setBip(String.join(".", ipArr));
+		//System.out.println(dto);
+		
+		if (dto != null) { // 내 글이 아닐때 null이 들어옵니다. 즉, null이 아닐때라고 검사해주세요.
+
+			if (dto.getBip() != null && dto.getBip().indexOf(".") != -1) {
+				String ip = dto.getBip();
+				String[] ipArr = ip.split("[.]");
+				ipArr[1] = "♡";
+				dto.setBip(String.join(".", ipArr));
+			}
 		}
 		return dto;
 
